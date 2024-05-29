@@ -1,1 +1,1 @@
-A FreeCAD workbench for generation of synthetic geodetic networks.
+A FreeCAD workbench to generate synthetic geodetic networks.
