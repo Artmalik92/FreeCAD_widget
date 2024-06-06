@@ -11,6 +11,7 @@ from PySide2 import QtGui
 from Synthetic_data import SyntheticData
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
+# py -m pip install --target "C:\Program Files\FreeCAD 0.21\bin\Lib\site-packages" package_name
 
 
 class MyWindow(QWidget):
@@ -262,8 +263,8 @@ class MyWindow(QWidget):
             try:
                 # Диалоговое окно для выбора имени и расположения файла для сохранения
                 user_file_path, user_file_filter = QFileDialog.getSaveFileName(caption="Сохранить файл",
-                                                                               directory=
-                                                                               self.data_dir + "/data_" + save_format,
+                                                                               #directory=
+                                                                               #self.data_dir + "/data_" + save_format,
                                                                                filter='CSV (*.csv)')
                 # копирование из временного файла в новый файл
                 if user_file_path:
