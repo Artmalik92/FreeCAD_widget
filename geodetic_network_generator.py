@@ -262,6 +262,7 @@ class MyWindow(QWidget):
             save_format = self.save_format.currentText()  # Получение формата сохранения файла
             try:
                 # Диалоговое окно для выбора имени и расположения файла для сохранения
+                # Параметр "ditectory" отсутствует в PySide2, необходимо заменить
                 user_file_path, user_file_filter = QFileDialog.getSaveFileName(caption="Сохранить файл",
                                                                                #directory=
                                                                                #self.data_dir + "/data_" + save_format,
